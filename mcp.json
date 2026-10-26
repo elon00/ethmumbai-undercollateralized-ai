@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "ethmumbai-undercollateralized-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "Arbitrum / Ethereum L2",
+        "PROJECT_TICKER": "EMLEND"
+      },
+      "tools": [
+        {
+          "name": "verify_emlend_invariants",
+          "description": "Verifies deterministic invariants for ETHMumbai Undercollateralized AI on Arbitrum / Ethereum L2."
+        },
+        {
+          "name": "execute_emlend_action",
+          "description": "Executes authenticated DeFi state transition."
+        }
+      ]
+    }
+  }
+}
